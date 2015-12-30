@@ -8,6 +8,10 @@ from django.db.models.query import QuerySet
 from djorm_pgfulltext.utils import adapt
 
 # Compatibility import and fixes section.
+try:
+    basestring
+except NameError:
+    basestring = str
 
 try:
     from django.utils.encoding import force_unicode as force_text

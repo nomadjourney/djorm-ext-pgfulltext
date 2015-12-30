@@ -1,4 +1,4 @@
-import psycopg2
+import psycopg2.extensions
 
 from django.db import connection
 from django.utils.text import force_text
